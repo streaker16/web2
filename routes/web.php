@@ -22,3 +22,6 @@ Route::get('/halamandua', function () {
 Route::get('/halamantiga', function () {
     return view('halamantiga');
 });
+
+Route::get('halaman/tambah','Contoh@tambah');
+Route::resource('halaman','Contoh');
