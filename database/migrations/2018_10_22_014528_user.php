@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMahasiswasTable extends Migration
+class User extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateMahasiswasTable extends Migration
      */
     public function up()
     {
-        Schema::create('mahasiswa', function (Blueprint $table) {
-            $table->increments('nim');
+        Schema::create('user', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('nama');
-            $table->string('email');
-            $table->string('nohp');
-            $table->text('alamat');
+            $table->string('password');
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ class CreateMahasiswasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mahasiswa');
+        Schema::dropIfExists('users');
     }
 }
