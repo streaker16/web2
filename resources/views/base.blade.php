@@ -46,9 +46,21 @@
                 <a href="halamantiga">- Halaman Tiga</a>
             </li>
 			<li>
-                <a href="{{route('mahasiswa.create')}}">- Tambah Mahasiswa</a>
+                <a href="{{route('mahasiswa.index')}}">- Mahasiswa</a>
+					<ul class="main-nav">
+						<li>
+							<a href="{{route('mahasiswa.create')}}"> Tambah </a>
+						</li>
+					</ul>
             </li>
-        </ul>
+			<li>
+                <a href="user">- User</a>
+					<ul class="main-nav">
+						<li>
+							<a href="{{route('user.create')}}"> Tambah </a>
+						</li>
+					</ul>
+            </li>
     </aside>
 
     @yield('content') {{-- Semua file konten di bagian ini --}}

@@ -25,7 +25,7 @@ class User extends Controller
      */
     public function create()
     {
-        //
+        return view('usercreate');
     }
 
     /**
@@ -36,7 +36,13 @@ class User extends Controller
      */
     public function store(Request $request)
     {
-        //
+        {
+		$data = new ModelUser();
+		$data->nama = $request->nama;
+		$data->password = $request->password;
+		$data->save();
+		return redirect()->route('user.index')->with('alert-success','Berhasil Menambahkan Data!');
+    }
     }
 
     /**

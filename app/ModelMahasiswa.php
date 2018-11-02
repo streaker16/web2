@@ -6,5 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class ModelMahasiswa extends Model
 {
-    protected $table = 'mahasiswa'; 
+    protected $table = 'mahasiswa';
+    protected $primaryKey = 'nim'; 
 }
