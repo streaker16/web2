@@ -46,7 +46,7 @@
                 <a href="halamantiga">- Halaman Tiga</a>
             </li>
 			<li>
-                <a href="{{route('mahasiswa.index')}}">- Mahasiswa</a>
+                <a href="/mahasiswa">- Mahasiswa</a>
 					<ul class="main-nav">
 						<li>
 							<a href="{{route('mahasiswa.create')}}"> Tambah </a>
@@ -54,7 +54,7 @@
 					</ul>
             </li>
 			<li>
-                <a href="user">- User</a>
+                <a href="/user">- User</a>
 					<ul class="main-nav">
 						<li>
 							<a href="{{route('user.create')}}"> Tambah </a>

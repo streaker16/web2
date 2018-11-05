@@ -30,10 +30,10 @@
                         <td>{{ $d->password }}</td>
                         
                         <td>
-                            <form action="{{ route('mahasiswa.destroy', $d->id) }}" method="post">
+                            <form action="{{ route('user.destroy', $d->id) }}" method="post">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
-                                <a href="{{ route('mahasiswa.edit',$d->id) }}" class=" btn btn-sm btn-primary">Edit</a>
+                                <a href="{{ route('user.edit',$d->id) }}" class=" btn btn-sm btn-primary">Edit</a>
                                 <button class="btn btn-sm btn-danger" type="submit" onclick="return confirm('Yakin ingin menghapus data?')">Delete</button>
                             </form>
                         </td>

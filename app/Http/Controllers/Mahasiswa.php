@@ -94,6 +94,8 @@ class Mahasiswa extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = ModelMahasiswa::where('nim',$id)->first();
+        $data->delete();
+        return redirect()->route('mahasiswa.index')->with('alert-success','Data berhasi dihapus!');
     }
 }
