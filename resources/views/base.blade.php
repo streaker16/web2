@@ -46,18 +46,26 @@
                 <a href="halamantiga">- Halaman Tiga</a>
             </li>
 			<li>
-                <a href="/mahasiswa">- Mahasiswa</a>
+                <a href="{{ route('mahasiswa.index') }}">Mahasiswa</a>
 					<ul class="main-nav">
 						<li>
-							<a href="{{route('mahasiswa.create')}}"> Tambah </a>
+							<a href="{{route('mahasiswa.create')}}">Tambah</a>
 						</li>
 					</ul>
             </li>
 			<li>
-                <a href="/user">- User</a>
+                <a href="{{ route('user.index') }}">User</a>
 					<ul class="main-nav">
 						<li>
-							<a href="{{route('user.create')}}"> Tambah </a>
+							<a href="{{route('user.create')}}">Tambah</a>
+						</li>
+					</ul>
+            </li>
+			<li>
+                <a href="{{ route('file.index') }}">File</a>
+					<ul class="main-nav">
+						<li>
+							<a href="{{route('file.create')}}">Tambah</a>
 						</li>
 					</ul>
             </li>
