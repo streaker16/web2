@@ -29,7 +29,7 @@
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-md btn-primary">Submit</button>
-                    <button type="reset" class="btn btn-md btn-danger">Cancel</button>
+                    <a href={{URL::previous()}} class="btn btn-md btn-danger">Cancel</a>
                 </div>
             </form>
             @endforeach
